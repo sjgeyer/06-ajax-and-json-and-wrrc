@@ -48,7 +48,7 @@ Article.fetchAll = () => {
     Article.loadAll(JSON.parse(retrievedData));
     articleView.initIndexPage();
   } else {
-    $.getJSON('/data/hackeripsum.json', data => {
+    $.getJSON('/data/hackerIpsum.json', data => {
       Article.all=[];
       Article.loadAll(data);
       localStorage.setItem('rawData', JSON.stringify(data));
